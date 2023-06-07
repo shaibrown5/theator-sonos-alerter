@@ -1,22 +1,10 @@
-[![PayPal donate button](https://img.shields.io/badge/paypal-donate-yellow.svg)](https://www.paypal.me/jishi "Donate once-off to this project using Paypal") [![Join the chat at gitter](https://img.shields.io/gitter/room/badges/shields.svg)](https://gitter.im/node-sonos-http-api/Lobby "Need assistance? Join the chat at Gitter.im") 
-
-⚠WARNING!⚠
-
-The Sonos S2 update, released June 2020, still works with this API. However, it might break in the future if and when Sonos decide to drop UPnP as the control protocol. 
+# Hackator project: Idea: have the speakers in the office play the "Imperial march" whenever the BE is down
 
 
-Feel free to use it as you please. Consider donating if you want to support further development. Reach out on the gitter chat if you have issues getting it to run, instead of creating new issues, thank you!
-
-If you are also looking for cloud control (ifttt, public webhooks etc), see the [bronos-client](http://www.bronos.net) project! That pi image also contains an installation of this http-api.  
+team: Shai Brown
 
 SONOS HTTP API
 ==============
-
-** Beta is no more, master is up to date with the beta now! **
-
-**This application requires node 4.0.0 or higher!**
-
-**This should now work on Node 6+, please let me know if you have issues**
 
 A simple http based API for controlling your Sonos system.
 
@@ -809,10 +797,10 @@ The following endpoints are available:
 
 **Spotify**
 
-You can find the **Spotify** track and album IDs as the last part of the URL. 
+You can find the **Spotify** track and album IDs as the last part of the URL.
 
 How to find the URL?
-- Web player: the address bar URL for albums and playlist; select _Copy Song Link_ from the dot menu. 
+- Web player: the address bar URL for albums and playlist; select _Copy Song Link_ from the dot menu.
 - Desktop client: via _Share > Copy {Album,Playlist,Song} Link_
 - Mobile client: via _Share > Copy Link_
 
@@ -829,7 +817,7 @@ API](https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web
 
 You can also use iTunes to figure out song and album IDs. Right click on a song or album and select "Share" -> "Copy Link". You can do this when you searched within Apple Music or from your media library as long as the song is available in Apple Music.
 
-Have a look at the link you just copied. 
+Have a look at the link you just copied.
 
 *If you shared the link to a song:*
 The format is: https://itunes.apple.com/de/album/{songName}/{albumID}?i={songID}
@@ -843,7 +831,7 @@ The format is: https://itunes.apple.com/de/album/{albumName}/{albumID}
 
 To find **Amazon Music** song and album IDs you can use the Amazon Music App, search for a song or an album and share a link.
 
-Look at the link you just shared. This works with Amazon Music Prime as well as with Amazon Music Prime which is included in your Amazon Prime membership. 
+Look at the link you just shared. This works with Amazon Music Prime as well as with Amazon Music Prime which is included in your Amazon Prime membership.
 
 *If you shared the link to a song:*
 The format is: https://music.amazon.de/albums/{albumID}?trackAsin={songID}&ref=dm_sh_d74d-4daa-dmcp-63cb-e8747&musicTerritory=DE&marketplaceId=A1PA6795UKMFR9
@@ -917,7 +905,7 @@ Refer to the table below for available codes for BBC Radio Stations
 |  BBC Radio Nottingham            | bbc_radio_nottingham             |
 |  BBC Radio Oxford                | bbc_radio_oxford                 |
 |  BBC Radio Scotland FM           | bbc_radio_scotland_fm            |
-|  BBC Radio Scotland Extra        | bbc_radio_scotland_mw            | 
+|  BBC Radio Scotland Extra        | bbc_radio_scotland_mw            |
 |  BBC Radio Sheffield             | bbc_radio_sheffield              |
 |  BBC Radio Shropshire            | bbc_radio_shropshire             |
 |  BBC Radio Solent                | bbc_radio_solent                 |
@@ -1152,7 +1140,7 @@ TCP, port 80/443 (for looking up hig res cover arts on various music services)
 
 The UDP traffic is a mixture of multicast (outgoing), broadcast (outgoing) and unicast (incoming). The multicast address is 239.255.255.250, the broadcast is 255.255.255.255 and the unicast is from the Sonos players.
 
-If port 3500 is occupied while trying to bind it, it will try using 3501, 3502, 3503 etc. You would need to adjust your firewall rules accordingly, if running multiple instances of this software, or any other software utilizing these ports. 
+If port 3500 is occupied while trying to bind it, it will try using 3501, 3502, 3503 etc. You would need to adjust your firewall rules accordingly, if running multiple instances of this software, or any other software utilizing these ports.
 
 ### Projects built with this API
 
@@ -1178,11 +1166,11 @@ https://github.com/anton-christensen/sonos-controller
 
 **Sonos Cron (PHP)**
 
-Service for retrieving commands from an AWS SQS queue and passing them to an instance of the Sonos HTTP API 
+Service for retrieving commands from an AWS SQS queue and passing them to an instance of the Sonos HTTP API
 https://github.com/cjrpaterson/sonos-cron
 
 **Sonos Push Server (JS)**
 
-A Node server to receive notifications from node-sonos-http-api and push them via socket.io to the clients. 
+A Node server to receive notifications from node-sonos-http-api and push them via socket.io to the clients.
 https://github.com/TimoKorinth/sonos-push-server
 
