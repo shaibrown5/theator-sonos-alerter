@@ -1,24 +1,12 @@
 {
   "players": [
     {
-      "roomName": "Bathroom",
-      "volume": 10
+      "roomName": "Brain",
+      "volume": 60
     },
     {
-      "roomName": "Kitchen",
-      "volume": 10
-    },
-    {
-      "roomName": "Office",
-      "volume": 10
-    },
-    {
-      "roomName": "Bedroom",
-      "volume": 10
-    },
-    {
-      "roomName": "TV Room",
-      "volume": 15
+      "roomName": "Rectum",
+      "volume": 60
     }
   ],
   "playMode": {

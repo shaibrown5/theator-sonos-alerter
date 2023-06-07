@@ -128,6 +128,6 @@ const checkStatus = () => {
     });
 };
 
-setInterval(() => checkStatus(), 3000);
+setInterval(() => checkStatus(), 5000);
 
 
